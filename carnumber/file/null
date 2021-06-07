@@ -1,0 +1,13 @@
+             button_go = btn.Button(screen, (640, 480), 150, 60, BLUE, WHITE, "识别", 25)
+    # 绘制创建的按钮
+    if event.type == pygame.QUIT:
+            # 退出
+            pygame.quit()
+            # 关闭摄像头
+            cam.release()
+            exit()
+            #识别按钮
+            if 492<=event.pos[0] and event.pos[0]<=642 and 422<=event.pos[1] and event.pos[1]<=482:
+                print('点击识别')
+                try:
+                 # 关闭页面系统退出
